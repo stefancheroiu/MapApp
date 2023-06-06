@@ -1,0 +1,133 @@
+.card {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+label {
+    width: max-content;
+    color: tomato;
+    font-size: 20px;
+    border-bottom: 0.5px solid tomato;
+    margin: 10px 0;
+}
+.desc {
+    font-size: 15px;
+}
+.username {
+    font-size: 15px;
+}
+.date {
+    font-size: 13px;
+}
+.pinForm {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(88, 87, 87);
+}
+input{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+input::placeholder, textarea::placeholder {
+    font-size: 12px;
+    color: rgb(185, 184, 184);
+}
+.submitButton {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    cursor: pointer;
+}
+.button {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.logout{
+    background-color: tomato;
+}
+.login{
+    background-color: blue;
+    margin-right: 10px;
+}
+.register{
+    background-color: orange;
+}
+.buttons, .logout {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.likeButton {
+    cursor: pointer;
+    color: red;
+    position:relative;
+    margin-right: 10px;
+}
+.commentButton {
+    color: #7C0A02;
+    cursor: pointer;
+}
+.likeSection {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+hr {
+    width: 100%;
+}
+.commentInput {
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid tomato;
+    border-radius: 10px;
+}
+.sendButton {
+    color: tomato;
+    position: relative;
+    left: 10px;
+    top: 7px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.commentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttonSend { 
+    border: none;
+    background-color: white;
+}
+.commentSection > form {
+    margin-bottom: 20px;
+}
+.commentUsername {
+    font-size: 16px;
+    margin-right: 12px;
+    color: tomato;
+}
+.commentBody {
+    font-size: 13px;
+    letter-spacing: 1px;   
+}
+.commentSection .comment {
+    align-self: start;
+}
+ 
