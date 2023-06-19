@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const pinRoute = require("./routes/pins");
 const userRoute = require("./routes/users");
 const commentRoute = require("./routes/comments");
-
+const mediaFilesRoute = require("./routes/mediaFiles");
 
 var cors = require('cors')
 
@@ -26,6 +26,7 @@ mongoose
 app.use("/api/pins", pinRoute)
 app.use("/api/users", userRoute)
 app.use("/api/comments", commentRoute);
+app.use("/api/mediaFiles", mediaFilesRoute);
 
 
 

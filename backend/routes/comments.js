@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const Comment = require("../models/Comment");
 
-// Create a comment
 router.post("/", async (req, res) => {
   try {
     const { username, body, pinId } = req.body;
@@ -18,7 +17,6 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Get all comments for a pin
 router.get("/:pinId", async (req, res) => {
   try {
     const { pinId } = req.params;

@@ -16,7 +16,6 @@ const handleSubmit = async (e) => {
   };
   try {
     const res = await axios.post("/users/login", user);
-    console.log(res)
     myStorage.setItem('user', res.data.username);
     myStorage.setItem('userId', res.data._id);
     setCurrentUser(res.data.username);
@@ -28,19 +27,19 @@ const handleSubmit = async (e) => {
   }
 };
 
-  return (
-    <div className="loginContainer">
-      <div className="logoLogin">
-        <Room />
-        <span>PinMe</span>
-      </div>
-      <form className="form" onSubmit={handleSubmit}>
-        <input autoFocus placeholder="username" ref={nameRef}></input>
-        <input type="password" placeholder="password" ref={passwordRef}></input>
-        <button className="loginButton" type="submit">Login</button>
-        {error && <span className="failure">Something went wrong!</span>}
-      </form>
-      <Cancel className="loginCancel" onClick={() => setShowLogin(false)} />
+return (
+  <div className="loginContainer">
+    <div className="logoLogin">
+      <Room />
+      <span>PinMe</span>
     </div>
-  );
-}
+    <form className="form" onSubmit={handleSubmit}>
+      <input autoFocus placeholder="username" ref={nameRef}></input>
+      <input type="password" placeholder="password" ref={passwordRef}></input>
+      <button className="loginButton" type="submit">Login</button>
+      {error && <span className="failure">Something went wrong!</span>}
+    </form>
+    <Cancel className="loginCancel" onClick={() => setShowLogin(false)} />
+  </div>
+)};
+

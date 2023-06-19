@@ -30,7 +30,7 @@ label {
     justify-content: space-between;
     color: rgb(88, 87, 87);
 }
-input{
+input {
     border: none;
     border-bottom: 1px solid gray;
 }
@@ -54,14 +54,14 @@ input::placeholder, textarea::placeholder {
     font-weight: 500;
     cursor: pointer;
 }
-.logout{
+.logout {
     background-color: tomato;
 }
-.login{
+.login {
     background-color: blue;
     margin-right: 10px;
 }
-.register{
+.register {
     background-color: orange;
 }
 .buttons, .logout {
@@ -130,4 +130,8 @@ hr {
 .commentSection .comment {
     align-self: start;
 }
- 
+.pinImage {
+    width: 100%;
+    height: 200px;
+    padding: 10px 0;
+}
