@@ -37,7 +37,7 @@ return (
       <input autoFocus placeholder="username" ref={nameRef}></input>
       <input type="password" placeholder="password" ref={passwordRef}></input>
       <button className="loginButton" type="submit">Login</button>
-      {error && <span className="failure">Something went wrong!</span>}
+      {error && <span className="failure">Wrong username or password!</span>}
     </form>
     <Cancel className="loginCancel" onClick={() => setShowLogin(false)} />
   </div>
